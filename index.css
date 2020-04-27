@@ -1,0 +1,48 @@
+body, html {
+  height: 100%;
+}
+
+#zoom {
+  height: 10000px;
+}
+
+#images {
+  position: fixed;
+}
+
+.img-wrapper {
+  border: 3px solid rgb(94, 94, 94);
+}
+
+.image {
+   /* Full height */
+   width: 100%;
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+#maria1 {
+  transform: scale(2);
+  z-index: 0;
+}
+
+#cortina {
+  position: absolute;
+  overflow: hidden;
+  display: block;
+  height: 80%;
+  width: 80%;
+  z-index: 1;
+}
+
+#cortina::after {
+  content:'';
+  position:absolute;
+  bottom:20%;
+  width:100%;
+  height:100%;
+  border-radius:100%;
+  box-shadow: 0px 300px 0px 300px #448CCB;
+}
